@@ -1,0 +1,16 @@
+/* Estilos globales para el elemento <body> de la página */
+body {
+  /* Color de fondo personalizado a mi gusto, con un tono suave de rosa (#ffe6f0) */
+  background-color: #ffe6f0;
+  /* Fuente personalizada: se usa 'Comic Sans MS' para darle un toque informal y cursivo,
+     junto a las familias cursive y sans-serif como respaldo */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  /* Centra el texto de forma horizontal */
+  text-align: center;
+  /* Color del texto, personalizado a mi gusto, en un tono púrpura oscuro (#6a0572) */
+  color: #6a0572;
+  /* Se eliminan los márgenes por defecto para lograr una apariencia limpia */
+  margin: 0;
+  /* Se elimina el padding por defecto para un ajuste preciso del layout */
+  padding: 0;
+}

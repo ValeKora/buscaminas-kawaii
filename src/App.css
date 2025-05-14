@@ -1,0 +1,78 @@
+/* Estilo para el contenedor principal de la aplicación, aplicando un padding general */
+.app {
+  padding: 20px;
+}
+
+/* Estilos comunes para los elementos: PlayerForm, ScoreBoard y GameBoard.
+   Se centran horizontalmente, se les aplica padding, un fondo rosado,
+   bordes redondeados y se limita su ancho para mantenerlos responsivos. */
+.player-form,
+.scoreboard,
+.game-board {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffccf9;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Estilos generales para los elementos input y button:
+   Se definen padding, márgenes, bordes redondeados, sin borde y el tamaño de fuente. */
+input,
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Estilos específicos para los botones:
+   Se define un fondo rosado, color para el texto y el cursor pointer para indicar interacción. */
+button {
+  background-color: #ffb3da;
+  color: #6a0572;
+  cursor: pointer;
+}
+
+/* Efecto hover para los botones:
+   Cambia el color de fondo y aplica un ligero escalado para un efecto visual interactivo. */
+button:hover {
+  background-color: #ff80b3;
+  transform: scale(1.05);
+}
+
+/* Estilos para el contenedor del tablero del juego.
+   Se utiliza CSS Grid para organizar las celdas en 5 columnas de 60px,
+   con un espacio de 6px entre ellas y se centra el grid en la página. */
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 6px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+/* Estilos base para cada celda del tablero.
+   Cada celda tiene un tamaño fijo, fondo rosado claro, bordes redondeados,
+   un tamaño de fuente mayor y una transición suave al aplicar efectos. */
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #fddde6;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Si una celda es segura (sin mina), se cambia el color de fondo a un tono diferente */
+.cell.safe {
+  background-color: #e6ccff;
+}
+
+/* Si una celda contiene una mina, se aplica un color de fondo distintivo */
+.cell.mine {
+  background-color: #ffcccc;
+}
